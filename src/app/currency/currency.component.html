@@ -1,0 +1,11 @@
+<div class="currency">
+    <img src="assets/img/eurologo.png">
+    <div *ngIf="!loading && !error">
+        <p >{{currency}} ₽</p>
+    </div>
+    <div *ngIf="loading">
+        <app-loader></app-loader>
+    </div>
+    <p *ngIf="error">Oops something went wrong</p>
+</div>
+
